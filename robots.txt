@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://global-technical-textiles.netlify.app/sitemap.xml

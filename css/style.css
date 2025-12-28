@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden; /* يمنع تمدد عرض الصفحة */
+}
+
+
+.hero {
+  background: #0f172a;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+nav {
+  background: #e5e7eb;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #0f172a;
+  font-weight: bold;
+}
+
+section {
+    padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+ text-align: center;
+  flex: 1
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+
+.product-card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+  
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;  /* مهم جدًا */
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  margin: 15px 0 10px;
+  color: #0f172a;
+}
+.product-card p {
+  padding: 0 15px 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+
+
+.site-footer {
+  background: #0f172a;
+  color: #e5e7eb;
+  padding: 20px 20px 15px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.footer-col h4 {
+  margin-bottom: 15px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.footer-col p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-col a {
+  display: block;
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.footer-col a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  margin-top: 25px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #9ca3af;
+}
